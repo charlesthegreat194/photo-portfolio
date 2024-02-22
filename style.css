@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+.gradient-text {
+    /* Apply gradient as text color */
+    background: linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b);
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Hide the actual text color */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body {
+    background-color: #161513!important;
+    font-family: 'plus jakarta sans';
+    margin: 0!important;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.navbar-brand{
+    padding-left: 5em;   
+    margin: 0;
+}
+.bsit{
+    font-size: large;
+   
+    display:flex;
+
+    margin-top: 1.5em;
+    align-items: center;
+    justify-content: center;   
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    font-weight:600;
+    position: relative; 
+    text-align: center;
+    margin: 0;
+      
+}
+.fname, .sname{
+    font-size: 35px;
+}
+.navbar{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+    border-bottom: 2px solid #2b2b2b;
+    background-color: #161513!important;
+}
+#main{
+    height: 70vh;
+    position: relative;
+   
+}
+#main::after{
+    content: '';
+    position: absolute;
+    bottom: -50px; /* Adjust the value to control the curve */
+    left: 0;
+    width: 100%;
+    height: 250px; /* Adjust the height of the curved part */
+    background: linear-gradient(to bottom, #b16cea, #ff5e69, #ff8a56, #ffa84b);
+    border-radius: 30% 0 0 0 ; /* Creates a semi-circle shape */
+    z-index: 1;
+}
+
+.main-container{
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    display: flex;
+    margin-top: 5em;
+    position: relative;
+    text-align: justify;
+}
+.img-container{
+    display: flex;
+    top: 30;
+    margin-top: 5em;
+   
+}
+.photo{ 
+    justify-content: center;
+    align-items: center;
+    height: 60vh;   
+    position: absolute;
+    left: 0;
+    padding-left: 5em;
+    z-index: 2;
+    top: 10em;
+
+
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+    background-color: transparent!important;
+    color: white!important;
+    border-radius: 15px !important;
+    border-image:linear-gradient(to top, #b16cea, #ff5e69, #ff8a56, #ffa84b)!important;
+    position: relative;
+    top: 5em;
+    right: 14.5em;
+   
+ 
+   
+    
+}
+#sub{ 
+    background: linear-gradient(to top, #b16cea, #ff5e69, #ff8a56, #ffa84b);
+}
+.sub-body{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+   
+   
+    
+}
+.sub-body h2{
+   margin-top: 3em;
+   color: white;
+   margin-bottom: 3em;
+   font-weight: 600px;
+   font-size: 35px;
+    
+    
+   
+}
+.yawa{
+    object-fit: cover;
+    object-position: center;
+     height: 400px!important;
+     width: 350px!important;
+     margin-top: 4vh;
+     display: flex;
+     border: 2px solid white;
+     border-radius: 15px;
+     margin-bottom: 3em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 8em; 
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center the items vertically */
+
+        
+    }
+    .navbar {
+        padding-left: 1em; 
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center the items vertically */
+        display: flex;
+
+        
+    }
+
+    .bsit {
+        font-size: small; 
+        padding-left: 1em; 
+    }
+
+    
+    .main-container h1{
+        
+        padding-left: 5em;
+        justify-content: center;
+        align-items: center;
+        
+        margin-bottom: 3em;
+        
+        
+        
+    }
+
+    .fname, .sname {
+        font-size: 30px; 
+        
+
+        
+        
+    }
+
+    .img-container {
+        margin-top: 2em;
+    }
+
+    #sub {
+        margin-top: 1em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+       
+    }
+
+    .sub-body h2 {
+        margin-top: 3; 
+        top: -4;
+        margin-bottom: 2em; 
+    }
+    .photo{
+        height: 40vh;
+        left: -5em; /* Adjust as needed */
+        z-index: 4;
+        position:absolute ;
+        
+
+        
+    }
+    #main::after{
+        border-radius: 30% 0 0 0 ;
+        
+    }
+    .btn {
+        bottom: 3em; /* Adjust as needed */
+        right: 13.5em; /* Center the button horizontally */
+        transform: translateX(50%); /* Center the button horizontally */
+        top: 7;
+        
+    }
+   
+}
+
